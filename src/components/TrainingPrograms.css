@@ -1,0 +1,31 @@
+.training-main-div{
+    text-align: center;
+    
+}
+.training-section{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.training-img{
+    width: 10rem;
+    height: 10rem;
+}
+
+@media (max-width: 1024px) {
+    /* styles for mobile devices */
+    .training-section {
+      flex-direction: column;
+      
+    }
+    
+    /* .nav-menu {
+      display: block;
+    }
+    
+    .nav-menu-icon {
+      display: block;
+    } */
+  }
+  

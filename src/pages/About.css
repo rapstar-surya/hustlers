@@ -1,0 +1,16 @@
+.top{
+    display: flex;
+    gap: 2rem;
+}
+.bottom{
+    display: flex;
+    gap: 2rem;
+}
+@media (max-width: 1024px) {
+    .top{
+        flex-direction: column;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+}

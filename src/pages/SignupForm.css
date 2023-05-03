@@ -1,0 +1,29 @@
+.signup-main-div{
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 25%;
+    border: 1px solid green;
+    width: 50%;
+    padding-bottom: 3rem;
+    border-radius: 3rem;
+}
+.form-signup{
+    padding-top: 3rem;
+}
+.input-box-signup{
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+.signup-btn{
+    /* padding: 0.5rem;
+    border-radius: 10px; */
+    padding: 1rem;
+    background-color: blue;
+    border-radius: 1.2rem;
+}
+.hr-signup{
+    width: 25%;
+}
+.signup-redirect{
+    color: blue;
+}

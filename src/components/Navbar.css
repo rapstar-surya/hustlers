@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    margin: 1rem;
+
+}
+
+.middle-part {
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-join-btn {
+    padding: 1rem;
+    background-color: blue;
+    border-radius: 1.2rem;
+}
