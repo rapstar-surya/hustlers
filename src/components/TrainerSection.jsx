@@ -1,6 +1,30 @@
 import React from "react";
 import './TrainerSection.css'
 
+const trainers = [
+  {
+    name: "Amitee Loiselle",
+    role: "Fitness Coach",
+    imageUrl: "https://images.pexels.com/photos/949129/pexels-photo-949129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    name: "Liam Harpaut",
+    role: "Crossfit Coach",
+    imageUrl: "https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    name: "Mark Anthony",
+    role: "Crossfit Coach",
+    imageUrl: "https://images.pexels.com/photos/1756959/pexels-photo-1756959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    name: "Ron Richardson",
+    role: "Body Building",
+    imageUrl: "https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  
+];
+
 export default function TrainerSection() {
   return (
     <div className="main-div">
@@ -14,29 +38,13 @@ export default function TrainerSection() {
       </div>
 
       <div className="images-div">
-        <div>
-          <img src="https://images.pexels.com/photos/949129/pexels-photo-949129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="trainers-img"/>
-          <h4>Amitee Loiselle</h4>
-          <p>Fitness Coach</p>
-        </div>
-
-        <div>
-          <img src="https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="trainers-img"/>
-          <h4>Liam Harpaut</h4>
-          <p>Crossfit Coach</p>
-        </div>
-
-        <div>
-          <img src="https://images.pexels.com/photos/1756959/pexels-photo-1756959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="trainers-img"/>
-          <h4>Mark Anthony</h4>
-          <p>Crossfit Coach</p>
-        </div>
-
-        <div>
-          <img src="https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="trainers-img"/>
-          <h4>Ron Richardson</h4>
-          <p>Body Building</p>
-        </div>
+        {trainers.map((trainer) => (
+          <div key={trainer.name}>
+            <img src={trainer.imageUrl} alt={trainer.name} className="trainers-img" />
+            <h4>{trainer.name}</h4>
+            <p>{trainer.role}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

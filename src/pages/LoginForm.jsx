@@ -5,7 +5,7 @@ import * as Yup from "yup";
 
 import {Link, useNavigate} from 'react-router-dom';
 
-const LoginForm = ({ setIsLoggedIn }) => {
+const LoginForm = () => {
   const navigate = useNavigate();
   
   const initialValues = {
@@ -29,14 +29,11 @@ const LoginForm = ({ setIsLoggedIn }) => {
 
     if (user) {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
-
       alert("logged in successfully!");
-      navigate('/home'); // use navigate function here
-      setIsLoggedIn(true);
+      navigate('/home'); 
     } else {
       alert("Invalid email or password");
     }
-
     setSubmitting(false);
   };
 
@@ -48,7 +45,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
         validationSchema={validationSchema}
         onSubmit={onSubmit}
       >
-        {({ errors, touched, isSubmitting }) => (
+        {({isSubmitting }) => (
           <Form className="form-login">
             <div>
               <label htmlFor="email">Email</label> <br />

@@ -1,15 +1,16 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
-import TrainingPrograms from "./components/TrainingPrograms";
-import TrainerSection from "./components/TrainerSection";
 import Pricing from "./pages/Pricing";
 import Footer from "./components/Footer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/LoginForm";
 import SignupForm from "./pages/SignupForm";
 import ContactUs from "./pages/ContactUs";
+
+import Navbar from "./components/Navbar";
+import TrainingPrograms from "./components/TrainingPrograms";
+import TrainerSection from "./components/TrainerSection";
 
 export default function App() {
   return (

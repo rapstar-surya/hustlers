@@ -29,7 +29,7 @@ const SignupForm = () => {
   const onSubmit = (values, { setSubmitting }) => {
     const users = JSON.parse(localStorage.getItem("users")) || [];
   
-    // check if the user already exists
+    // checking if the user already exists
     const existingUser = users.find(user => user.email === values.email);
     if (existingUser) {
       alert("This email is already registered!");
@@ -58,7 +58,7 @@ const SignupForm = () => {
         validationSchema={validationSchema}
         onSubmit={onSubmit}
       >
-        {({ errors, touched, isSubmitting }) => (
+        {({isSubmitting }) => (
           <Form className="form-signup">
             <div>
               <label htmlFor="firstName">First Name</label> <br />
