@@ -40,7 +40,7 @@ const tiers = [
       'Priority email support',
     ],
     buttonText: 'Get started',
-    buttonVariant: 'contained',
+    buttonVariant: 'outlined',
   },
   {
     title: 'Enterprise',

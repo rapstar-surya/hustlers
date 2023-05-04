@@ -14,18 +14,49 @@
 }
 
 @media (max-width: 1024px) {
-    /* styles for mobile devices */
     .training-section {
       flex-direction: column;
       
     }
-    
-    /* .nav-menu {
-      display: block;
-    }
-    
-    .nav-menu-icon {
-      display: block;
-    } */
+  }
+/*   
+
+  .wrapper {
+    max-height: 240px;
+    max-width: 720px;
+    border: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+    margin-top: 20px;
   }
   
+  .wrapper .item {
+    min-width: 220px;
+    height: 220px;
+    text-align: center;
+    border: 1px solid;
+    margin-right: 10px;
+    border-radius: 10%;
+  }
+  
+  .size {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .content p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+   */
